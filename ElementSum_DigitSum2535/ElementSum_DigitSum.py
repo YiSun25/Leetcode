@@ -8,7 +8,7 @@ class Solution:
                 # print("num%10",num%10)
                 digitSum += num % 10
                 # print(digitSum)
-                num //= 10
+                num //= 10        # remove the last digit
                 # print("num")
                 # print(num)
         return elementSum - digitSum
