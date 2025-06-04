@@ -1,0 +1,12 @@
+class Solution:
+    def sumOfTheDigitsOfHarshadNumber(self, x: int) -> int:
+        sum = 0
+        temp = x
+        while temp:
+            sum += temp % 10
+            temp //= 10
+        return -1 if x % sum else sum   
+    
+solution = Solution()
+num = 60
+print(solution.sumOfTheDigitsOfHarshadNumber(num))
